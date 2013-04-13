@@ -1,0 +1,402 @@
+﻿/*iWebKit 6 css by Christopher Plieger*/
+
+/*TOPBAR*/
+
+/*header styling*/
+body>header,body>footer {
+	z-index:100;position:fixed;width:100%}
+body>header{background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(230,230,230,1)), color-stop(3%, rgba(181,192,206,1)), color-stop(50%, rgba(136,155,179,1)), color-stop(51%, rgba(127,148,176,1)), color-stop(97%, rgba(109,131,161,1)), color-stop(98%, rgba(45,48,51,1)), to(rgba(45,48,51,1)));}
+body>footer{background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2d3033), color-stop(2%, #2d3033),color-stop(3%, #e6e6e6),color-stop(4%, #b5c0ce), color-stop(50%, #889bb3), color-stop(51%, #7f94b0), to(#6d83a1));}
+body>header{top:0}
+body>footer{bottom:0}
+body>header>nav>a{color:white}
+body> header > nav > a.leftnav[data-nav-type=arrow]{-webkit-border-image: url("../svg/navigation/leftnative.svgz") 0 4 0 13; border-width:0 5px 0 14px;padding-right:4px;background:url('../svg/navigation/leftnativetouch.svgz') center center no-repeat ; background-size:1px 1px}
+body> header > nav > a.rightnav[data-nav-type=arrow]{-webkit-border-image: url("../svg/navigation/rightnative.svgz") 0 13 0 4; border-width:0 14px 0 5px;padding-left:4px;background:url('../svg/navigation/rightnativetouch.svgz') center center no-repeat; background-size:1px 1px}
+body> header > nav > a.leftnav[data-nav-type=arrow].click{-webkit-border-image: url("../svg/navigation/leftnativetouch.svgz") 0 4 0 13}
+body> header > nav > a.rightnav[data-nav-type=arrow].click{-webkit-border-image: url("../svg/navigation/rightnativetouch.svgz") 0 13 0 4}
+body> header > nav > a[data-nav-type=button]{-webkit-border-image: url("../svg/navigation/nativebutton.svgz") 0 4 0 4; border-width:0 4px 0 4px;padding:0 5px 0 5px; background:url('../svg/navigation/nativebuttontouch.svgz') center center no-repeat; background-size:1px 1px}
+body> header > nav > a[data-nav-type=button][data-color=blue]{-webkit-border-image: url("../svg/navigation/bluebutton.svgz") 0 4 0 4; border-width:0 5px 0 5px;padding:0 5px 0 5px}
+body> header > nav > a[data-nav-type=button].click{-webkit-border-image: url("../svg/navigation/nativebuttontouch.svgz") 0 4 0 4}
+body>header>h1 {color:white}
+
+@media screen and (width: 480px)
+{
+body> header > nav > a.leftnav[data-nav-type=arrow]{border-width:0 4px 0 12px}
+body> header > nav > a.rightnav[data-nav-type=arrow]{border-width:0 12px 0 4px}
+body> header > nav > a[data-nav-type=button]{border-width:0 4px 0 4px}
+body> header > nav > a[data-nav-type=button][data-color=blue]{border-width:0 4px 0 4px}
+
+}
+
+/*topbar settings*/
+body>header,body>footer {height:44px}
+body>header>nav{width:310px; position:relative; top:7px; left:5px; height:31px;z-index:1}
+body>header>nav>a{display:block; height:31px;line-height:31px;text-decoration:none; text-shadow:rgba(0, 0, 0, 0.6) 0 -1px 0; font-size:12px; font-weight: bold;z-index:1}
+body > header > nav > a.leftnav[data-nav-type=arrow], body > header > nav > a.leftnav[data-nav-type=button]{float:left}
+body > header > nav > a.rightnav[data-nav-type=arrow], body > header > nav > a.rightnav[data-nav-type=button]{float:right}
+body>header h1 {font-size:20px; line-height:44px;text-shadow:rgba(0, 0, 0, 0.6) 0 -1px 0;z-index:0;height:44px; width:320px; position:absolute;top:0; text-align:center;margin:0}
+body > header > nav > a[data-nav-type=button]{-webkit-border-radius:4px}
+body > header > nav > a.leftnav[data-nav-type=arrow]{border-radius:17px 4px 4px 17px}
+body > header > nav > a.rightnav[data-nav-type=arrow]{border-radius:4px 17px 17px 4px}
+
+/*topbar settings landscape*/
+@media screen and (width: 480px)
+{
+body>header,body>footer {height: 32px;}
+body>header>nav{width:472px; top:4px; left:4px; height:25px; }
+body>header>nav>a{ height:25px;line-height:25px;font-weight: 400}
+body > header > nav > a.leftnav[data-nav-type=arrow]{padding-left:0 -1px}
+body > header > nav > a.rightnav[data-nav-type=arrow]{padding-right:0 -1px}
+body>header>h1 {font-size:15px;line-height:32px;height:32px; width:480px}
+}
+
+/*CONTENT*/
+
+/*content styling*/
+body{-webkit-background-size:0.438em 100%;background: -webkit-gradient(linear,left top,right top,from(#c5ccd4), color-stop(71%, #c5ccd4), color-stop(72%, #cbd2d8), to(#cbd2d8));}
+body #content{z-index:50;margin-top:44px;height:416px;overflow:scroll;-webkit-overflow-scrolling:touch;overflow-x:hidden}
+body #content>header>h2,body #content>aside h4,body #content>aside p {color: #4c566c;text-shadow: #FFF 0 1px 0}
+body #content>aside a{color: #009;text-shadow: #FFF 0 1px 0;text-decoration:none}
+body #content section{background:white; border:1px solid #ababab;}
+body #content section h3 {color: rgb(73,102,145)}
+body #content section>nav>a{color:black}
+body #content section>nav a{background: url('../svg/elements.svgz') 229px -110px no-repeat}body #content section>nav[data-image-type=thumbnail] a{background: url('../svg/elements.svgz') 229px -104px no-repeat}
+body #content section>nav[data-image-type=image] a{background: url('../svg/elements.svgz') 229px -87px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat; background-size:auto auto, 88px 88px}
+body #content section>nav a.click{background:url('../svg/elements.svgz') 283px -110px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+body #content section>nav[data-image-type=thumbnail] a.click{background:url('../svg/elements.svgz') 283px -104px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+body #content section>nav[data-image-type=image] a.click{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat, url('../svg/elements.svgz') 283px -87px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6)); background-size:88px 88px, auto auto, auto auto} 
+body #content section>nav[data-image-type=icon]>a>small{color: #324f85}
+body #content section>nav>a.click p, body #content section>nav[data-image-type=icon]>a.click small,body #content section>nav[data-image-type=thumbnail]>a.click>small,body #content section>nav[data-image-type=image]>a.click>div,body #content section>nav[data-image-type=image]>a.click>small{color:white}
+body #content section>nav[data-image-type=thumbnail]>a>small,body #content section>nav[data-image-type=image]>a>small,body #content section>nav[data-image-type=image]>a>div{color:#808080}
+body #content fieldset[data-input-type=select]>select{background: url('../svg/elements.svgz') 280px -300px no-repeat}
+body #content fieldset[data-input-type=button]>input{background:white}
+body #content fieldset[data-input-type=radiobutton]>input:checked+label{color:#335086}
+
+@media screen and (width: 480px)
+{body #content{margin-top:32px;height:268px;width:480px}
+body #content section>nav a{background-position:389px -110px}body #content section>nav[data-image-type=thumbnail] a{background-position:389px -104px}
+body #content section>nav[data-image-type=image] a{background: url('../svg/elements.svgz') 389px -87px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat; background-size:auto auto, 88px 88px}
+body #content section>nav a.click{background:url('../svg/elements.svgz') 443px -110px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+body #content section>nav[data-image-type=thumbnail] a.click{background:url('../svg/elements.svgz') 443px -104px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+body #content section>nav[data-image-type=image] a.click{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat, url('../svg/elements.svgz') 443px -87px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6)); background-size:88px 88px, auto auto, auto auto} 
+body #content fieldset[data-input-type=select]>select{background: url('../svg/elements.svgz') 440px -300px no-repeat}
+}
+
+/* content settings*/
+
+@media screen and (width: 320px)
+{
+/*hide elements*/
+[data-hide=ipod],[data-hide=portrait],[data-hide=ipod-portrait]{display:none}
+}
+
+body #content>header>h2{font-weight: bold;font-size: 17px;margin:0 0 5px 20px}
+body #content>header:first-child{margin-top:17px;}
+body #content section{margin-top:20px}
+body #content>header + section{margin-top:0}
+body #content section h3 {color: rgb(73,102,145);font-weight: bold;font-size: 12pt;line-height: 14pt;margin:0}
+body #content section{-webkit-border-radius:8px; margin:0 9px 20px 9px;width:300px}
+body #content section>article{margin:5px 0 5px 10px; width:280px}
+body #content section>article>p{margin: 0 2px;text-align:justify}
+body #content>aside{text-align:center; width:300px; margin-left:10px}
+body #content>aside h4{font-weight: bold;font-size: 17px;margin:20px auto 0; }
+body #content>aside p {font-size: 17px; margin:0}
+body #content section + aside p {margin-top:-15px}
+body #content section + aside header + p {margin-top:0px}
+body #content>aside + section,body #content>aside + header{margin-top:20px}
+body #content section>nav{overflow:hidden;white-space: nowrap;}
+body #content section>nav:first-child,body #content section>nav:first-child>a:first-child,body #content section fieldset:first-child>input,body #content section fieldset:first-child>textarea,body #content section fieldset:first-child>select{border-top-left-radius: 7px;border-top-right-radius:7px}
+body #content section>nav:last-child, body #content section>nav:last-child>a:last-child,body #content section fieldset:last-child>input,body #content section fieldset:last-child>textarea,body #content section fieldset:last-child>select{border-bottom-left-radius: 7px;border-bottom-right-radius:7px}
+body #content section>nav>a{display:block;text-decoration:none;white-space: nowrap;}
+body #content section>nav>a,body #content fieldset{border:0; border-bottom:1px solid #ababab}
+body #content section>nav:last-child>a:last-child,body #content section>form:last-child>fieldset:last-child, body #content fieldset>input,body #content fieldset:last-child{border:0}
+body #content section>nav[data-image-type=icon]>a>img{width:32px; height:32px; margin: 6px 0 0 5px;float:left;}
+body #content section>nav[data-image-type=none]>a>img{display:none}
+body #content section>nav[data-image-type=thumbnail]>a>img{height:55px;float:left}
+body #content section>nav[data-image-type=thumbnail]>a{height:55px;position:relative}
+body #content section>nav[data-image-type=none]>a,body #content section>nav[data-image-type=icon]>a{height:43px}
+body #content section>nav[data-image-type=image]>a{height:88px;position:relative}
+body #content section>nav[data-image-type=image]>a>img{height:88px;float:left}
+body #content section>nav>a>p{margin:0 0 0 10px;float:left;white-space: nowrap;text-overflow: ellipsis;font-weight: bold;font-size: 17px;overflow: hidden;}
+body #content section>nav[data-image-type=icon]>a>small{font-size: 17px;text-overflow: ellipsis;overflow: hidden;max-width: auto;white-space: nowrap;float: right;line-height:43px;height:43px; margin-right:30px;width:auto;}
+body #content section>nav[data-image-type=icon]>a>p{line-height:43px;height:43px;max-width:235px}
+body #content section>nav[data-image-type=none]>a>p{line-height:43px;height:43px;max-width:275px}
+body #content section>nav[data-image-type=image]>a>p{line-height:88px;height:88px;max-width:190px;position:absolute;left:83px}
+body #content section>nav[data-image-type=thumbnail]>a>p{line-height:55px;max-width:219px;display:block}
+body #content section>nav[data-image-type=thumbnail]>a>small + p{line-height:20px;max-width:219px;display:block;position:absolute;top:9px;left:55px;font-size:14px}
+body #content section>nav[data-image-type=thumbnail]>a>small{position:absolute; top:29px; left:67px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:216px}
+body #content section>nav[data-image-type=none] img{display:none}
+body #content section>nav[data-image-type=thumbnail]>a>p + small:before{content:"<small> BEFORE <P> IN HTML";font-size:17px; color:red;background:yellow;height:30px;display:inline-block;line-height:30px;margin-top:-20px;margin-left:-68px;width: 298px; border-radius:8px;text-align:center;border:1px solid red}
+body #content fieldset[data-input-type=radiobutton]>label+input:before{content:"<label> AFTER <input> IN HTML";font-size:17px; color:red;background:yellow;height:43px;display:inline-block;line-height:43px;width: 298px; border-radius:8px;text-align:center;border:1px solid red}
+body #content section>nav[data-image-type=image] small{position:absolute;left:95px; top:15px;font-weight:bold;max-width:188px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;font-size:12px}
+body #content section>nav[data-image-type=image] div{position:absolute;left:94px; top:57px;height:22px;display:block;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;min-width:115px;font-size:12px}
+body #content section>nav[data-image-type=image] div[data-stars=zero]:before{content:"No reviews"; padding-right:10000px}
+body #content section>nav[data-image-type=image] div[data-stars=one]{width:59px;background: url('../svg/elements.svgz') -59px -218px, url('../svg/elements.svgz') 14px -280px, url('../svg/elements.svgz') 28px -280px, url('../svg/elements.svgz') 42px -280px no-repeat, url('../svg/elements.svgz') 56px -280px; background-size: 214% auto;background-repeat:no-repeat}
+body #content section>nav[data-image-type=image] div[data-stars=two]{width:59px;background: url('../svg/elements.svgz') -59px -218px, url('../svg/elements.svgz') -45px -218px, url('../svg/elements.svgz') 28px -280px, url('../svg/elements.svgz') 42px -280px no-repeat, url('../svg/elements.svgz') 56px -280px; background-size: 214% auto;background-repeat:no-repeat}
+body #content section>nav[data-image-type=image] div[data-stars=three]{width:59px;background: url('../svg/elements.svgz') -59px -218px, url('../svg/elements.svgz') -45px -218px, url('../svg/elements.svgz') -31px -218px, url('../svg/elements.svgz') 42px -280px no-repeat, url('../svg/elements.svgz') 56px -280px; background-size: 214% auto;background-repeat:no-repeat}
+body #content section>nav[data-image-type=image] div[data-stars=four]{width:59px;background: url('../svg/elements.svgz') -59px -218px, url('../svg/elements.svgz') -45px -218px, url('../svg/elements.svgz') -31px -218px, url('../svg/elements.svgz') -17px -218px, url('../svg/elements.svgz') 56px -280px; background-size: 214% auto;background-repeat:no-repeat}
+body #content section>nav[data-image-type=image] div[data-stars=five]{width:59px;background: url('../svg/elements.svgz') -59px -218px, url('../svg/elements.svgz') -45px -218px, url('../svg/elements.svgz') -31px -218px, url('../svg/elements.svgz') -17px -218px, url('../svg/elements.svgz') -3px -218px; background-size: 214% auto;background-repeat:no-repeat}
+body #content section>nav[data-image-type=image] div:not([data-stars=zero]){padding-left:70px}
+body #content section>nav[data-image-type=image] a:first-child img, body #content section>nav[data-image-type=thumbnail] a:first-child img{border-top-left-radius:7px}
+body #content section>nav[data-image-type=image] a:last-child img, body #content section>nav[data-image-type=thumbnail] a:last-child img{border-bottom-left-radius:7px}
+body #content input{-webkit-appearance: none}
+body #content fieldset[data-input-type=field]>input{width:280px;margin-left:-10px; padding:0 10px;font-size: 17px;background:transparent;font-weight: bold;display:block;height:43px;-webkit-border-radius: 0}
+body #content fieldset[data-input-type=labelfield]>input{width:175px;float:right;color:#385487;font-weight:normal;font-size:14px;height:43px;padding: 0 10px 0 0;-webkit-border-radius: 0;}
+body #content fieldset[data-input-type=labelfield]>label{overflow:hidden;text-overflow:ellipsis;max-width:100px;width:100px;display:block;white-space:nowrap;float:left}
+body #content fieldset{padding:0; margin:0;background:transparent;font-size:17px; font-weight:bold;line-height:43px;padding-left:10px;position:relative}
+body #content fieldset[data-input-type=checkbox] input{width: 76px;height: 27px;border: 0;float: right;margin: 8px 8px 0 0;background: url('../svg/elements.svgz') 76px -35px;-webkit-border-radius:16px}
+body #content fieldset[data-input-type=checkbox] input:checked{background: url('../svg/elements.svgz') 125px -35px}
+
+body #content fieldset[data-input-type=checkbox] input[data-color=orange]{background: url('../svg/elements.svgz') 76px -1px}
+body #content fieldset[data-input-type=checkbox] input[data-color=orange]:checked{background: url('../svg/elements.svgz') 125px -1px}
+body #content fieldset[data-input-type=checkbox]>label{white-space:nowrap;text-overflow:ellipsis; overflow:hidden;width:180px;display:inline-block}
+body #content fieldset[data-input-type=radiobutton]>input{width: 100%;	height: 100%;z-index: 2;position: absolute;left: 0;margin: 0;-webkit-border-radius: 0;}
+body #content fieldset[data-input-type=radiobutton]>label{width:100%;height:100%;display:block;margin-left:-10px;padding-left:10px}
+body #content fieldset[data-input-type=radiobutton]>input:checked{background: url('../svg/elements.svgz') 225px 14px no-repeat}
+body #content fieldset[data-input-type=radiobutton]>input:checked.click{background: url('../svg/elements.svgz') 279px 14px no-repeat}
+body #content fieldset:last-child[data-input-type=button].click{-webkit-border-bottom-left-radius:7px;-webkit-border-bottom-right-radius:7px}
+body #content fieldset[data-input-type=button].click, body #content fieldset[data-input-type=button]>input.click,body #content fieldset[data-input-type=select]>select.click,body #content fieldset[data-input-type=select].click,body #content fieldset[data-input-type=radiobutton]>input.click +label{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6));color:white}
+body #content fieldset[data-input-type=radiobutton]>input:checked.click +label{color:white}
+body #content fieldset[data-input-type=select],body #content fieldset[data-input-type=button].click,body #content fieldset[data-input-type=button],body #content fieldset[data-input-type=textarea]{padding:0}
+body #content fieldset[data-input-type=select]>select{height: 43px;width: 300px;-webkit-border-radius: 0;border:0;padding-left:10px;font-size:17px;font-weight: bold;-webkit-appearance:listbox}
+body #content fieldset[data-input-type=button]>input{padding:0 10px;width:300px;height:43px;font-size:17px;font-weight: bold;-webkit-border-radius:0;}
+body #content fieldset[data-input-type=textarea]{width:300px;line-height:0}
+body #content fieldset[data-input-type=textarea]>textarea{padding: 5px 10px;width:278px;height:100%;-webkit-border-radius:0;-webkit-appearance: none;border:0;font-size: 16px}
+body #content section fieldset[data-input-type=labelfield]:first-child>input{-webkit-border-top-left-radius:0}
+body #content section fieldset[data-input-type=labelfield]:last-child>input{-webkit-border-bottom-left-radius:0}
+body #content section fieldset[data-input-type=checkbox]:last-child>input,body #content section fieldset[data-input-type=checkbox]:first-child>input{-webkit-border-radius:4px}
+
+
+/*content settings landscape*/
+@media screen and (width: 480px)
+{
+body #content{top:32px;}
+body #content section,body #content>aside,fieldset[data-input-type=textarea],body #content fieldset[data-input-type=button]>input,body #content fieldset[data-input-type=select]>select,body #content fieldset[data-input-type=textarea]{width:460px}
+body #content section>article,body #content fieldset[data-input-type=field]>input{width:440px}
+body #content section>nav[data-image-type=icon]>a>p{max-width:395px}
+body #content section>nav[data-image-type=none]>a>p{max-width:435px}
+body #content section>nav[data-image-type=image]>a>p{max-width:350px}
+body #content section>nav[data-image-type=thumbnail]>a>p,body #content section>nav[data-image-type=thumbnail]>a>small + p{max-width:379px}
+body #content section>nav[data-image-type=thumbnail]>a>small{max-width:376px}
+body #content section>nav[data-image-type=thumbnail]>a>p + small:before,body #content fieldset[data-input-type=radiobutton]>label+input:before{width: 458px}
+body #content section>nav[data-image-type=image] small{max-width:348px}
+body #content fieldset[data-input-type=labelfield]>input{width:270px}
+body #content fieldset[data-input-type=labelfield]>label{max-width:170px;width:170px}
+body #content fieldset[data-input-type=checkbox]>label{width:340px}
+body #content fieldset[data-input-type=textarea]>textarea{width:438px}
+body #content fieldset[data-input-type=radiobutton]>input:checked{background: url('../svg/elements.svgz') 385px 14px no-repeat
+}
+}
+/* Footer */
+body>footer{-webkit-column-width:auto}
+body>footer[data-elementcount=three]{-webkit-column-count: 3}
+body>footer[data-elementcount=four]{-webkit-column-count: 4}
+body>footer[data-elementcount=five]{-webkit-column-count: 5}
+body>footer>a{display:block; height:44px; text-align:center}
+body>footer img{height:19px;margin-top:12px}
+@media screen and (width: 480px)
+{
+	body>footer>a{height:32px}
+	body>footer img{height:15px;margin-top:8px}
+	/*hide elements*/
+	[data-hide=ipod],[data-hide=landscape],[data-hide=ipod-landscape]{display:none}
+}
+/* main settings*/
+body{margin:0;font-family: Arial, Helvetica, sans-serif;-webkit-text-size-adjust:none;-webkit-touch-callout:none;overflow-x:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0); }
+footer,header,#ipadmenu{-webkit-transition-property:-webkit-transform}
+body #content ~ #content {top:0;position:absolute}
+header,footer,#content,section,p,#ipadmenu,header>nav{-webkit-transform-style:preserve-3d}
+
+/*Gallery*/
+
+[data-ui=gallery]{background:white;}
+[data-ui=gallery]>img{width:75px;margin-left:4px;}
+[data-ui=gallery]>img:first-child,[data-ui=gallery]>img:nth-child(2),[data-ui=gallery]>img:nth-child(3),[data-ui=gallery]>img:nth-child(4){margin-top:4px}
+
+/*iPad Settings*/
+@media screen and (max-width: 767px){#ipadmenu,[data-ipadnav="left"]{display:none}}
+@media screen and (min-width: 768px){
+	#ipadmenu{width:300px;border-right:1px solid black;top:44px;position:absolute;bottom:44px;left:0}
+	#ipadmenu>section{position: absolute; top: 0;left:0;padding:0;margin:0}
+	#ipadmenu>section:not(:first-child){display:none}
+	[data-ipadnav="left"]>h1{width:290px}
+	#ipadmenu~#content{position:absolute;right:0}
+	body{background:#e1e4e9}
+	body>header{background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), color-stop(2%, #ffffff), color-stop(3%, #f4f5f7), color-stop(50%, #dfe1e6), color-stop(97%, #a8acb9), color-stop(98%,#7a8091), to(#7a8091)), url(../svg/elements.svgz);}
+	body>footer{background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7f7f7f), color-stop(2%, #7f7f7f),color-stop(3%, #edeef1), color-stop(50%, #d9dbe1), to(#a5a9b6));}
+	body>header h1{color:#717880;text-shadow:#e6e7eb 0 1px 0;}
+	body> header > nav > a{text-shadow:none}
+	body> header > nav > a.leftnav[data-nav-type=arrow]{-webkit-border-image: url("../svg/navigation/leftgray.svgz") 0 4 0 13;background:url('../svg/navigation/leftgraytouch.svgz') center center no-repeat}
+	body> header > nav > a.leftnav[data-nav-type=arrow].click{-webkit-border-image: url("../svg/navigation/leftgraytouch.svgz") 0 4 0 13}
+	body> header > nav > a.rightnav[data-nav-type=arrow].click{-webkit-border-image: url("../svg/navigation/rightgraytouch.svgz") 0 13 0 4}
+	body> header > nav > a.rightnav[data-nav-type=arrow]{-webkit-border-image: url("../svg/navigation/rightgray.svgz") 0 13 0 4;background:url('../svg/navigation/rightgraytouch.svgz') center center no-repeat}
+	body> header > nav > a[data-nav-type=button]{-webkit-border-image: url("../svg/navigation/graybutton.svgz") 0 4 0 4; background:url('../svg/navigation/graybuttontouch.svgz') center center no-repeat}
+	body> header > nav > a[data-nav-type=button].click{-webkit-border-image: url("../svg/navigation/graybuttontouch.svgz") 0 4 0 4}
+	body> header > nav > a[data-nav-type=button][data-color=blue]{background:url("../svg/navigation/nativebuttontouch.svgz") center center no-repeat;background-size:1px 1px;}
+	body> header > nav > a[data-nav-type=button][data-color=blue].click{-webkit-border-image: url("../svg/navigation/nativebuttontouch.svgz") 0 4 0 4}
+	[data-ipadnav="right"]{position:absolute;left:305px;right:5px}
+	[data-ipadnav="left"]{position:absolute;left:5px;width:300px;height:44px;top:0;background:url(../svg/elements.svgz) -54px -68px}
+	[data-ipadnav="left"]>a{margin-top:7px;position:relative}
+	[data-ipadnav="left"]>.rightnav{margin-right:10px}
+	[data-ipadnav] ~ h1 {position:relative;left:300px}
+	h1 ~ [data-ipadnav]:after {content:"Put the <h1> after the data-ipadnav elements";color:red;background:yellow;display:block;height:44px; position:fixed;top:44px;left:0;width:755px;border:solid 1px red;line-height:44px;text-align:center;}
+	h1 ~ [data-ipadnav]~ [data-ipadnav]:after{display:none}
+	
+}
+@media screen and (width: 1024px)
+{
+body>header>nav{width:1014px}
+body>header>h1 {width:1024px}
+[data-ipadnav] ~ h1{width:724px}
+body #content{width:1024px; height:704px;}
+body #content section>nav a{background-position:933px -110px}body #content section>nav[data-image-type=thumbnail] a{background-position:933px -104px}
+body #content section>nav[data-image-type=image] a{background: url('../svg/elements.svgz') 933px -87px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat; background-size:auto auto, 88px 88px}
+body #content section>nav a.click{background:url('../svg/elements.svgz') 987px -110px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+body #content section>nav[data-image-type=thumbnail] a.click{background:url('../svg/elements.svgz') 987px -104px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+body #content section>nav[data-image-type=image] a.click{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat, url('../svg/elements.svgz') 987px -87px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6)); background-size:88px 88px, auto auto, auto auto} 
+body #content fieldset[data-input-type=select]>select{background: url('../svg/elements.svgz') 984px -300px no-repeat}
+
+body #content section,body #content>aside,fieldset[data-input-type=textarea],body #content fieldset[data-input-type=button]>input,body #content fieldset[data-input-type=select]>select,body #content fieldset[data-input-type=textarea]{width:1004px}
+body #content section>article,body #content fieldset[data-input-type=field]>input{width:984px}
+body #content section>nav[data-image-type=icon]>a>p{max-width:939px}
+body #content section>nav[data-image-type=none]>a>p{max-width:979px}
+body #content section>nav[data-image-type=image]>a>p{max-width:894px}
+body #content section>nav[data-image-type=thumbnail]>a>p,body #content section>nav[data-image-type=thumbnail]>a>small + p{max-width:923px}
+body #content section>nav[data-image-type=thumbnail]>a>small{max-width:920px}
+body #content section>nav[data-image-type=thumbnail]>a>p + small:before,body #content fieldset[data-input-type=radiobutton]>label+input:before{width: 1002px}
+body #content section>nav[data-image-type=image] small{max-width:892px}
+body #content fieldset[data-input-type=labelfield]>input{width:814px}
+body #content fieldset[data-input-type=labelfield]>label{max-width:714px;width:714px}
+
+
+
+body #content fieldset[data-input-type=checkbox]>label{width:884px}
+body #content fieldset[data-input-type=textarea]>textarea{width:976px}
+body #content fieldset[data-input-type=radiobutton]>input:checked{background: url('../svg/elements.svgz') 929px 14px no-repeat}
+/*hide elements*/
+[data-hide=ipad],[data-hide=landscape],[data-hide=ipad-landscape]{display:none}
+/*ipad menu*/
+#ipadmenu{height:704px}
+#ipadmenu ~ #content{width:723px;right:0}
+#ipadmenu.oldcontent ~ #content.newcontent{width:1024px;}
+#ipadmenu.newcontent ~ #content.newcontent{width:723px;}
+#ipadmenu ~ #content section>nav a{background-position:632px -110px}
+#ipadmenu ~ #content section>nav[data-image-type=thumbnail] a{background-position:632px -104px}
+#ipadmenu ~ #content section>nav[data-image-type=image] a{background: url('../svg/elements.svgz') 632px -87px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat; background-size:auto auto, 88px 88px}
+#ipadmenu.oldcontent ~ #content.newcontent section>nav a{background-position:933px -110px}
+#ipadmenu.oldcontent ~ #content.newcontent section>nav[data-image-type=thumbnail] a{background-position:933px -104px}
+#ipadmenu.oldcontent ~ #content.newcontent section>nav[data-image-type=image] a{background: url('../svg/elements.svgz') 933px -87px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat; background-size:auto auto, 88px 88px}
+#ipadmenu.newcontent ~ #content.newcontent section>nav a{background-position:632px -110px}
+#ipadmenu.newcontent ~ #content.newcontent section>nav[data-image-type=thumbnail] a{background-position:632px -104px}
+#ipadmenu.newcontent ~ #content.newcontent section>nav[data-image-type=image] a{background: url('../svg/elements.svgz') 632px -87px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat; background-size:auto auto, 88px 88px}
+#ipadmenu ~ #content section>nav a.click{background:url('../svg/elements.svgz') 686px -110px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+#ipadmenu ~ #content section>nav[data-image-type=thumbnail] a.click{background:url('../svg/elements.svgz') 686px -104px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+#ipadmenu ~ #content section>nav[data-image-type=image] a.click{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat, url('../svg/elements.svgz') 686px -87px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6)); background-size:88px 88px, auto auto, auto auto} 
+#ipadmenu ~ #content fieldset[data-input-type=select]>select{background: url('../svg/elements.svgz') 683px -300px no-repeat}
+
+#ipadmenu ~ #content section,#ipadmenu ~ #content>aside,#ipadmenu ~ #content fieldset[data-input-type=textarea],#ipadmenu ~ #content fieldset[data-input-type=button]>input,#ipadmenu ~ #content fieldset[data-input-type=select]>select,#ipadmenu ~ #content fieldset[data-input-type=textarea]{width:703px}
+#ipadmenu.oldcontent ~ #content.newcontent section,#ipadmenu.oldcontent ~ #content.newcontent>aside,#ipadmenu.oldcontent ~ #content.newcontent fieldset[data-input-type=textarea],#ipadmenu.oldcontent ~ #content.newcontent fieldset[data-input-type=button]>input,#ipadmenu.oldcontent ~ #content.newcontent fieldset[data-input-type=select]>select,#ipadmenu.oldcontent ~ #content.newcontent fieldset[data-input-type=textarea]{width:1004px}
+#ipadmenu.newcontent ~ #content.newcontent section,#ipadmenu.newcontent ~ #content.newcontent>aside,#ipadmenu.newcontent ~ #content.newcontent fieldset[data-input-type=textarea],#ipadmenu.newcontent ~ #content.newcontent fieldset[data-input-type=button]>input,#ipadmenu.newcontent ~ #content.newcontent fieldset[data-input-type=select]>select,#ipadmenu.newcontent ~ #content.newcontent fieldset[data-input-type=textarea]{width:703px}
+
+#ipadmenu ~ #content article{width:685px}
+#ipadmenu.oldcontent ~ #content.newcontent article {width:984px}
+#ipadmenu.oldcontent ~ #ipadmenu.newcontent ~ #content.newcontent article,#ipadmenu ~ #content fieldset[data-input-type=field]>input {width:683px}
+#ipadmenu ~ #content section>nav[data-image-type=icon]>a>p{max-width:638px}
+#ipadmenu ~ #content section>nav[data-image-type=none]>a>p{max-width:678px}
+#ipadmenu ~ #content section>nav[data-image-type=image]>a>p{max-width:593px}
+#ipadmenu ~ #content section>nav[data-image-type=thumbnail]>a>p,#ipadmenu ~ #content section>nav[data-image-type=thumbnail]>a>small + p{max-width:622px}
+#ipadmenu ~ #content section>nav[data-image-type=thumbnail]>a>small{max-width:920px}
+#ipadmenu ~ #content section>nav[data-image-type=thumbnail]>a>p + small:before,#ipadmenu ~ #content fieldset[data-input-type=radiobutton]>label+input:before{width: 701px}
+#ipadmenu ~ #content section>nav[data-image-type=image] small{max-width:591px}
+#ipadmenu ~ #content fieldset[data-input-type=labelfield]>input{width:384px}
+#ipadmenu ~ #content fieldset[data-input-type=labelfield]>label{max-width:299px;width:299px}
+#ipadmenu ~ #content fieldset[data-input-type=checkbox]>label{width:583px}
+#ipadmenu ~ #content fieldset[data-input-type=textarea]>textarea{width:675px}
+#ipadmenu ~ #content fieldset[data-input-type=radiobutton]>input:checked{background: url('../svg/elements.svgz') 628px 14px no-repeat}
+[data-ipadnav="right"]{width:714px}
+}
+@media screen and (width: 768px)
+{body>header>nav{width:758px}
+body>header>h1 {width:768px}
+[data-ipadnav] ~ h1{width:468px}
+body #content{width:768px;height:960px}
+body #content section>nav a{background-position:677px -110px}
+body #content section>nav[data-image-type=thumbnail] a{background-position:677px -104px}
+body #content section>nav[data-image-type=image] a{background: url('../svg/elements.svgz') 677px -87px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat; background-size:auto auto, 88px 88px}
+body #content section>nav a.click{background:url('../svg/elements.svgz') 731px -110px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+body #content section>nav[data-image-type=thumbnail] a.click{background:url('../svg/elements.svgz') 731px -104px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+body #content section>nav[data-image-type=image] a.click{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat, url('../svg/elements.svgz') 731px -87px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6)); background-size:88px 88px, auto auto, auto auto} 
+body #content fieldset[data-input-type=select]>select{background: url('../svg/elements.svgz') 728px -300px no-repeat}
+
+body #content section,body #content>aside,fieldset[data-input-type=textarea],body #content fieldset[data-input-type=button]>input,body #content fieldset[data-input-type=select]>select,body #content fieldset[data-input-type=textarea]{width:748px}
+body #content section>article,body #content fieldset[data-input-type=field]>input{width:728px}
+body #content section>nav[data-image-type=icon]>a>p{max-width:683px}
+body #content section>nav[data-image-type=none]>a>p{max-width:723px}
+body #content section>nav[data-image-type=image]>a>p{max-width:638px}
+body #content section>nav[data-image-type=thumbnail]>a>p,body #content section>nav[data-image-type=thumbnail]>a>small + p{max-width:667px}
+body #content section>nav[data-image-type=thumbnail]>a>small{max-width:664px}
+body #content section>nav[data-image-type=thumbnail]>a>p + small:before,body #content fieldset[data-input-type=radiobutton]>label+input:before{width: 746px}
+body #content section>nav[data-image-type=image] small{max-width:636px}
+body #content fieldset[data-input-type=labelfield]>input{width:407px}
+body #content fieldset[data-input-type=labelfield]>label{max-width:307px;width:307px}
+body #content fieldset[data-input-type=checkbox]>label{width:628px}
+body #content fieldset[data-input-type=textarea]>textarea{width:720px}
+body #content fieldset[data-input-type=radiobutton]>input:checked{background: url('../svg/elements.svgz') 673px 14px no-repeat}
+
+/*hide elements*/
+[data-hide=ipad],[data-hide=portrait],[data-hide=ipad-portrait]{display:none}
+/*ipadmenu*/
+#ipadmenu{height:960px}
+#ipadmenu ~ #content {width:467px;right:0}
+#ipadmenu.oldcontent ~ #content.newcontent{width:768px;}
+#ipadmenu.newcontent ~ #content.newcontent{width:467px;}
+#ipadmenu ~ #content section,#ipadmenu ~ #content>aside,#ipadmenu ~ #content fieldset[data-input-type=textarea],#ipadmenu ~  #content fieldset[data-input-type=button]>input,#ipadmenu ~  #content fieldset[data-input-type=select]>select,#ipadmenu ~  #content fieldset[data-input-type=textarea]{width:447px}
+#ipadmenu.oldcontent ~ #content.newcontent section,#ipadmenu.oldcontent ~ #content.newcontent>aside,#ipadmenu.oldcontent ~ #content.newcontent fieldset[data-input-type=textarea],#ipadmenu.oldcontent ~ #content.newcontent fieldset[data-input-type=button]>input,#ipadmenu.oldcontent ~ #content.newcontent fieldset[data-input-type=select]>select,#ipadmenu.oldcontent ~ #content.newcontent fieldset[data-input-type=textarea]{width:748px}
+#ipadmenu.newcontent ~ #content.newcontent section,#ipadmenu.newcontent ~ #content.newcontent>aside,#ipadmenu ~ #content fieldset[data-input-type=textarea],#ipadmenu.newcontent ~ #content.newcontent fieldset[data-input-type=button]>input,#ipadmenu.newcontent ~ #content.newcontent fieldset[data-input-type=select]>select,#ipadmenu.newcontent ~ #content.newcontent fieldset[data-input-type=textarea]{width:447px}
+
+#ipadmenu ~ #content section>nav a{background-position:376px -110px}
+#ipadmenu ~ #content article{width:429px}
+#ipadmenu.oldcontent ~ #content.newcontent article {width:728px}
+#ipadmenu.oldcontent ~ #ipadmenu.newcontent ~ #content.newcontent article,#ipadmenu ~ #content fieldset[data-input-type=field]>input {width:429px}
+#ipadmenu.oldcontent ~ #content.newcontent section>nav a{background-position:677px -110px}
+#ipadmenu.newcontent ~ #content.newcontent section>nav a{background-position:376px -110px}
+#ipadmenu ~ #content section>nav[data-image-type=thumbnail] a{background-position:376px -104px}
+#ipadmenu.oldcontent ~ #content.newcontent section>nav[data-image-type=thumbnail] a{background-position:677px -104px}
+#ipadmenu.newcontent ~ #content.newcontent section>nav[data-image-type=thumbnail] a{background-position:376px -104px}
+#ipadmenu ~ #content section>nav[data-image-type=image] a{background: url('../svg/elements.svgz') 376px -87px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat; background-size:auto auto, 88px 88px}
+#ipadmenu.oldcontent ~ #content.newcontent section>nav[data-image-type=image] a{background: url('../svg/elements.svgz') 677px -87px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat; background-size:auto auto, 88px 88px}
+#ipadmenu.newcontent ~ #content.newcontent section>nav[data-image-type=image] a{background: url('../svg/elements.svgz') 376px -87px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat; background-size:auto auto, 88px 88px}
+#ipadmenu ~ #content section>nav a.click{background:url('../svg/elements.svgz') 430px -110px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+#ipadmenu ~ #content section>nav[data-image-type=thumbnail] a.click{background:url('../svg/elements.svgz') 430px -104px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6))}
+#ipadmenu ~ #content section>nav[data-image-type=image] a.click{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(239,242,246)), color-stop(1, rgb(214,220,229))) no-repeat, url('../svg/elements.svgz') 430px -87px no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6)); background-size:88px 88px, auto auto, auto auto} 
+#ipadmenu ~ #content fieldset[data-input-type=select]>select{background: url('../svg/elements.svgz') 427px -300px no-repeat}
+#ipadmenu.oldcontent ~ #content.newcontent fieldset[data-input-type=select]>select{background: url('../svg/elements.svgz') 728px -300px no-repeat}
+#ipadmenu.newcontent ~ #content.newcontent fieldset[data-input-type=select]>select{background: url('../svg/elements.svgz') 427px -300px no-repeat}
+
+#ipadmenu ~ #content section>nav[data-image-type=icon]>a>p{max-width:382px}
+#ipadmenu ~ #content section>nav[data-image-type=none]>a>p{max-width:422px}
+#ipadmenu ~ #content section>nav[data-image-type=image]>a>p{max-width:337px}
+#ipadmenu ~ #content section>nav[data-image-type=thumbnail]>a>p,#ipadmenu ~ #content section>nav[data-image-type=thumbnail]>a>small + p{max-width:366px}
+#ipadmenu ~ #content section>nav[data-image-type=thumbnail]>a>small{max-width:363px}
+#ipadmenu ~ #content section>nav[data-image-type=thumbnail]>a>p + small:before,#ipadmenu ~ #content fieldset[data-input-type=radiobutton]>label+input:before{width: 445px}
+#ipadmenu ~ #content section>nav[data-image-type=image] small{max-width:335px}
+#ipadmenu ~ #content fieldset[data-input-type=labelfield]>input{width:257px}
+#ipadmenu ~ #content fieldset[data-input-type=labelfield]>label{max-width:157px;width:157px}
+#ipadmenu ~ #content fieldset[data-input-type=checkbox]>label{width:327px}
+#ipadmenu ~ #content fieldset[data-input-type=textarea]>textarea{width:419px}
+#ipadmenu ~ #content fieldset[data-input-type=radiobutton]>input:checked{background: url('../svg/elements.svgz') 372px 14px no-repeat}
+[data-ipadnav="right"]{width:458px}
+}
+/*ipad menu settings*/
+#ipadmenu{overflow-y:scroll; -webkit-overflow-scrolling:touch}
+#ipadmenu a{display:block;width:100%;height:43px;border-bottom:1px solid #d6d8da;border-top:1px solid #eceef0;font-family: Arial, Helvetica, sans-serif;font-size: 17px;overflow-x:hidden}
+#ipadmenu a[data-type=full]{display:block;width:100%;height:77px;background:white;border-top:0;border-bottom:#e0e0e0 solid 1px}
+#ipadmenu a:first-child{border-top:0}
+#ipadmenu a p {line-height:43px;padding: 0 10px;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;float:left;max-width:280px;text-shadow:#ebecee 0 1px 0;display:block;font-weight: bold;}
+#ipadmenu a img~p{max-width:238px}
+#ipadmenu a[data-type=full] p {line-height:15px;padding:5px 10px}
+#ipadmenu a[data-type=full] small{display:-webkit-box;-webkit-box-orient: vertical;text-overflow:ellipsis;overflow:hidden;max-height:47px;-webkit-line-clamp:3;float:left;padding:0 10px;font-size:12px;color:#808080}
+#ipadmenu img{width: 32px;height: 32px;margin: 6px 0 0 10px;float:left}
+#ipadmenu a.click{color:white;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#058cf5), to(#015fe6));text-shadow:none;border:0;min-height:45px}
+#ipadmenu a.click img{margin: 7px 0 0 10px;}
+#ipadmenu a.click small{color:white}
